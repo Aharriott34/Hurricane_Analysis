@@ -164,6 +164,14 @@ for dictionary in hurricane_dictionary:
 # 8 Calculating Hurricane Maximum Damage
 max_damage = max(hurricane_dictionary, key=lambda x:x["Damage"])
 # find highest damage inducing hurricane and its total cost
+# Rating Hurricanes by Damage
+damage_scale = {0: 0,
+                1: 100000000,
+                2: 1000000000,
+                3: 10000000000,
+                4: 50000000000}
+
+
 for dictionary in hurricane_dictionary:
   dictionary["Damage Scale"] = ""
   if dictionary["Damage"] > 50000000000:
@@ -183,10 +191,5 @@ for dictionary in hurricane_dictionary:
     new_dict.append(dictionary)
 print(new_dict)
 
-# Rating Hurricanes by Damage
-damage_scale = {0: 0,
-                1: 100000000,
-                2: 1000000000,
-                3: 10000000000,
-                4: 50000000000}
+
 
