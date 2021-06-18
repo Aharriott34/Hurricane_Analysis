@@ -183,7 +183,6 @@ for dictionary in hurricane_dictionary:
     new_dict.append(dictionary)
 print(new_dict)
 
-# 9
 # Rating Hurricanes by Damage
 damage_scale = {0: 0,
                 1: 100000000,
@@ -191,4 +190,3 @@ damage_scale = {0: 0,
                 3: 10000000000,
                 4: 50000000000}
 
-# categorize hurricanes in new dictionary with damage severity as key
